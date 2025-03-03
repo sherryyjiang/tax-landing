@@ -1,9 +1,8 @@
-import { CheckCircle, LineChart, Wallet, Zap } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import { GradientBackground } from "@/components/ui/gradient-background";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import SignUpButton from "@/components/SignUpButton";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -49,7 +48,7 @@ export default function Home() {
         <section id="how-it-works" className="py-20 md:py-28">
           <div className="container mx-auto px-4 md:px-6">
             <div className="mx-auto max-w-3xl text-center">
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-white">here's how it works</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-white">here&apos;s how it works</h2>
               <p className="mt-4 text-gray-400">
                 peek uses the power of AI to help you understand your spending and build better habits
               </p>
@@ -101,21 +100,10 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-white">join our community</h2>
               <p className="mt-4 text-gray-400">be the first to know about new features and updates</p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
-                <a 
-                  href="https://chat.whatsapp.com/Be9qBtT0JWO5ptO8gp2LXa" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <Button variant="secondary" size="lg" className="gap-2">
-                    join whatsapp group
-                    <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                  </Button>
-                </a>
+                <WhatsAppButton />
               </div>
             </div>
-          </div>
+        </div>
         </section>
       </main>
       <footer className="border-t border-gray-800/30 bg-black/30 z-10">
