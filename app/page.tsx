@@ -29,7 +29,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">peek</h1>
 
             {/* Tagline */}
-            <p className="text-xl md:text-2xl text-gray-400 mb-12">see exactly where your money goes—in just 2 minutes</p>
+            <p className="text-xl md:text-2xl text-gray-400 mb-12">file your taxes in 2 minutes. seriously.</p>
 
             <div className="w-full max-w-sm mx-auto">
               <div className="flex justify-center">
@@ -50,45 +50,45 @@ export default function Home() {
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-white">here&apos;s how it works</h2>
               <p className="mt-4 text-gray-400">
-                peek uses the power of AI to help you understand your spending and build better habits
+                peek uses AI to simplify your taxes and maximize your refund
               </p>
             </div>
             <div className="mt-16 grid gap-0 md:grid-cols-3 max-w-5xl mx-auto">
               <div className="flex flex-col items-center text-center px-1">
                 <div className="mb-6 h-[500px] w-full relative overflow-hidden">
                   <Image
-                    src="/Expenses.png"
-                    alt="Expenses screen"
+                    src="/Add assets.png"
+                    alt="Add assets screen"
                     fill
                     className="object-contain"
                     priority
                   />
                 </div>
-                <p className="text-base text-gray-300">connect your accounts instantly</p>
+                <p className="text-base text-gray-300">connect your accounts to import tax documents</p>
               </div>
               <div className="flex flex-col items-center text-center px-1">
                 <div className="mb-6 h-[500px] w-full relative overflow-hidden">
                   <Image
-                    src="/Stories_insights.png"
-                    alt="Stories and insights screen"
+                    src="/Tax_insights.png"
+                    alt="Tax insights screen"
                     fill
                     className="object-contain"
                     priority
                   />
                 </div>
-                <p className="text-base text-gray-300">spot your spending leaks in seconds</p>
+                <p className="text-base text-gray-300">AI calculates your tax liability in seconds</p>
               </div>
               <div className="flex flex-col items-center text-center px-1">
                 <div className="mb-6 h-[500px] w-full relative overflow-hidden">
                   <Image
-                    src="/Follow up chat.png"
-                    alt="Follow up chat screen"
+                    src="/Tax_chat.png"
+                    alt="Tax chat screen"
                     fill
                     className="object-contain"
                     priority
                   />
                 </div>
-                <p className="text-base text-gray-300">get guidance to fix them</p>
+                <p className="text-base text-gray-300">get task management to file taxes headache-free</p>
               </div>
             </div>
           </div>
