@@ -1,7 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { GradientBackground } from "@/components/ui/gradient-background";
 import Image from "next/image";
-import SignUpButton from "@/components/SignUpButton";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import EmailSignUpForm from "@/components/EmailSignUpForm";
 import EmailAdmin from "@/components/EmailAdmin";

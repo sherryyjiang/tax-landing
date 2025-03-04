@@ -55,7 +55,7 @@ export default function EmailSignUpForm() {
       } catch (storageErr) {
         console.warn('Could not store email in localStorage:', storageErr);
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error('Error submitting email:', err);
       const errorMessage = err instanceof Error ? err.message : 'Unable to submit your email at this time. Please try again later.';
       setError(errorMessage);
