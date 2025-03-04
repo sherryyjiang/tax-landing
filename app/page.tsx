@@ -3,6 +3,8 @@ import { GradientBackground } from "@/components/ui/gradient-background";
 import Image from "next/image";
 import SignUpButton from "@/components/SignUpButton";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import EmailSignUpForm from "@/components/EmailSignUpForm";
+import EmailAdmin from "@/components/EmailAdmin";
 
 export default function Home() {
   return (
@@ -29,12 +31,10 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">peek</h1>
 
             {/* Tagline */}
-            <p className="text-xl md:text-2xl text-gray-400 mb-12">file your taxes in 2 minutes. seriously.</p>
+            <p className="text-xl md:text-2xl text-gray-400 mb-8">file your taxes in 2 minutes. seriously.</p>
 
-            <div className="w-full max-w-sm mx-auto">
-              <div className="flex justify-center">
-                <SignUpButton />
-              </div>
+            <div className="w-full max-w-md mx-auto">
+              <EmailSignUpForm />
               <div className="mt-4 flex items-center justify-center gap-1 text-sm text-gray-500">
                 <CheckCircle className="h-4 w-4 text-white/70" />
                 <span>
@@ -64,7 +64,7 @@ export default function Home() {
                     priority
                   />
                 </div>
-                <p className="text-base text-gray-300">connect your accounts to import tax documents</p>
+                <p className="text-base text-gray-300">connect your accounts to automatically import your tax documents</p>
               </div>
               <div className="flex flex-col items-center text-center px-1">
                 <div className="mb-6 h-[500px] w-full relative overflow-hidden">
@@ -103,7 +103,7 @@ export default function Home() {
                 <WhatsAppButton />
               </div>
             </div>
-        </div>
+          </div>
         </section>
       </main>
       <footer className="border-t border-gray-800/30 bg-black/30 z-10">
@@ -113,6 +113,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      
+      {/* Admin Panel */}
+      <EmailAdmin />
     </div>
   );
 }
